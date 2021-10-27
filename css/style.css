@@ -1,6 +1,98 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
 html {
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 100%;
+}
+
+body {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+a, a:link, a:visited {
+    color: #666666;
+}
+
+a:hover, a:focus {
+    color: #101010;
+}
+
+#navTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+#navClose {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mobileNav {
+    width: 80%;
+    background-color: #ECECEC;
+}
+
+#mobileNav.position-left:not(.is-open) {
+    transform: translateX(-100%);
+}
+
+#mobileNav.position-left.is-closed {
+    transform: translateX(-100%);
+}
+
+#menuButton {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+#companyIcon {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+#companyName {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.rightCell {
+    width: 100%;
+    justify-content: right;
+    display: flex;
+    align-items:center
+}
+
+.centerCell {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #b20061;
+}
+
+.navLink, .navLink:link, .navLink:visited{
+    color: #FFFFFF;
+    margin-top: 0.5rem;
+}
+
+.navLink:hover, .navLink:focus {
+    color: #D2D2D2;
 }
