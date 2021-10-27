@@ -68,6 +68,16 @@ a:hover, a:focus {
     display: inline-block;
 }
 
+#instagramMobile {
+    width: 1rem;
+    height: 1rem;
+}
+
+#instagramDesktop {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .rightCell {
     width: 100%;
     justify-content: right;
