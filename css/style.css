@@ -14,11 +14,12 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
-a, a:link, a:visited {
+a, a:link, a:visited, a:focus {
     color: #666666;
+    outline: none;
 }
 
-a:hover, a:focus {
+a:hover {
     color: #101010;
 }
 
@@ -76,6 +77,13 @@ a:hover, a:focus {
 #instagramDesktop {
     width: 1.5rem;
     height: 1.5rem;
+}
+
+#splashPhoto {
+    width: 100%;
+    height: auto;
+    min-height: 18rem;
+    object-fit: cover;
 }
 
 /* small and medium screen */
@@ -146,15 +154,87 @@ a:hover, a:focus {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     background-color: #8B1656; /*#B20061;*/
+    z-index: 1;
 }
 
-.navLink, .navLink:link, .navLink:visited{
+.navLink, .navLink:link, .navLink:visited, .navLink:focus {
     color: #FFFFFF;
     margin-top: 0.5rem;
 }
 
-.navLink:hover, .navLink:focus {
+.navLink:hover {
     color: #D2D2D2;
+}
+
+.featureTitle {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.featureImage {
+    border: solid 1px #D2D2D2;
+    border-radius: 3%;
+    width: 95%;
+    height: auto;
+}
+
+.featureName {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+}
+
+.featureDescription {
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    margin-top: -0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.featureViewAll {
+    position: relative;
+    width: 95%;
+}
+
+.featureViewAll:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.featureViewAllBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: solid 1px #D2D2D2;
+    border-radius: 3%;
+    background-color: #E0D5BF;
+    line-height:100%;
+    height:100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureViewAllText {
+    font: normal normal 2rem 'Pacifico', cursive; 
+    color: #666666;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .clear {

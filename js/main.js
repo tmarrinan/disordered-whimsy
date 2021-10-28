@@ -1,4 +1,8 @@
 function init() {
+    // initialize Foundation CSS framework
+    $(document).foundation();
+
+    // adjust main content spacing
     adjustMainContentPadding();
     $(window).resize(adjustMainContentPadding);
 }
