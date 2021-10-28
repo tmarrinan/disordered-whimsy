@@ -7,12 +7,12 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/style.css">
+        <script type="application/javascript" src="js/main.js"></script>
     </head>
-    <body>
+    <body onload="init();">
         <!-- Navigation for mobile site -->
         <div class="hide-for-large">
             <div class="off-canvas-wrapper">
-                <!-- Your menu or Off-canvas content goes here -->
                 <div id="mobileNav" class="off-canvas position-left" data-off-canvas>
                     <!-- Menu Title -->
                     <div class="grid-x grid-padding-x">
@@ -41,7 +41,7 @@
         </div>
 
         <!-- Header -->
-        <div class="grid-x grid-padding-x header hide-for-large">
+        <div id="headerMobile" class="grid-x grid-padding-x header hide-for-large">
             <div class="cell small-3 flex-container align-middle">
                 <img id="menuButton" src="images/menu_white.png" alt="menu button" data-toggle="mobileNav"/>
             </div>
@@ -50,7 +50,7 @@
                 <h1 id="companyName">Disordered Whimsy</h1>
             </div>
         </div>
-        <div class="grid-x grid-padding-x header show-for-large">
+        <div id="headerDesktop" class="grid-x grid-padding-x header show-for-large">
             <div class="cell large-12 flex-container align-middle">
                 <div class="centerCell">
                     <span style="width: 1.5rem; visibility: hidden; margin-right: auto;"></span>
@@ -66,8 +66,36 @@
             <div class="cell auto"><div class="centerCell"><a class="navLink" href="#">Blog Posts</a></div></div>
         </div>
 
+        <!-- Main content -->
+        <div id="main">
+            <div class="grid-x">
+                <div class="cell small-12">
+                    <img src="images/splash_photo.jpg" alt="splash photo - whimsy tree" style="width: 100%; height: auto;" />
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell auto">
+                        <img id="profilePhoto" src="images/beth_profile.jpg" alt="Beth Marrinan" />
+                        <h2 id="profileName">Beth Marrinan</h2>
+                        <div class="hide-for-medium clear"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis turpis dui, eu sollicitudin lacus convallis vel. Donec interdum ipsum sit amet lectus porttitor interdum. In in facilisis nisl. Duis vel neque quis mi hendrerit elementum vitae aliquet diam. Etiam dignissim in mi at cursus. Donec elementum tortor non vulputate egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Quisque eu dolor eget sapien egestas fringilla a finibus est. Curabitur sodales pretium leo, luctus ultricies metus cursus in. Quisque lobortis odio ut ullamcorper vulputate. In eleifend metus quis nisl eleifend, id varius augue condimentum. Integer enim quam, bibendum nec urna vitae, convallis mattis orci. In feugiat mi neque, at varius augue mattis quis. Aliquam non mi diam.</p>
+                    </div>
 
-        <!-- include before closing </body> tag -->
+                    <!--
+                    <div class="cell small-6 large-4">
+                        <img id="profilePhoto" src="images/beth_profile.jpg" alt="Beth Marrinan" />
+                    </div>
+                    <div class="cell small-6 large-8">
+                        <h2 id="profileName">Beth Marrinan</h2>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Include before closing </body> tag -->
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/vendor.js"></script>
         <script src="js/foundation.js"></script>

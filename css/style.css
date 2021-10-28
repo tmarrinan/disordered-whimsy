@@ -78,6 +78,54 @@ a:hover, a:focus {
     height: 1.5rem;
 }
 
+/* small and medium screen */
+@media only screen and (max-width: 1024px) {
+    #profilePhoto {
+        width: 50%;
+        height: auto;
+        float: left;
+        border: solid 2px #FFFFFF;
+        border-radius: 50%;
+        margin: -4rem 2rem 1rem 0;
+    }
+}
+
+/* large screen */
+@media only screen and (min-width: 1024px) {
+    #profilePhoto {
+        width: 33%;
+        height: auto;
+        float: left;
+        border: solid 2px #FFFFFF;
+        border-radius: 50%;
+        margin: -4rem 2rem 1rem 0;
+    }
+}
+
+/* small screen */
+@media only screen and (max-width: 640px) {
+    #profileName{
+        font-size: 1.5rem;
+        margin-top: 1.25rem;
+    }
+}
+
+/* medium screen */
+@media only screen and (min-width: 640px) and (max-width: 1024px) {
+    #profileName{
+        font-size: 1.75rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* large screen */
+@media only screen and (min-width: 1024px) {
+    #profileName{
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+}
+
 .rightCell {
     width: 100%;
     justify-content: right;
@@ -93,9 +141,11 @@ a:hover, a:focus {
 }
 
 .header {
+    position: fixed;
+    width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    background-color: #b20061;
+    background-color: #8B1656; /*#B20061;*/
 }
 
 .navLink, .navLink:link, .navLink:visited{
@@ -105,4 +155,8 @@ a:hover, a:focus {
 
 .navLink:hover, .navLink:focus {
     color: #D2D2D2;
+}
+
+.clear {
+    clear: both;
 }
